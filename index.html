@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Lidia's Website Project</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body class="Site">
+      <header>Lidia's Website Project</header>
+      <main class="Site content">
+      <nav class="nav-flex-container">
+         <ul>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/index.html">Home</a>
+            </li>
+            <li>
+               <a href="https://docs.google.com/document/d/17JuIu0DbzvPR_RAZKURR8E-0GyeHwqzwwQhFjQ_z2_Q/edit?usp=sharing">Resume</a>
+            </li>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/oer.html">OER Project</a>
+            </li>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/video.html">Video Editing</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="content-flex-container">
+         <aside>
+            <h2>Hi! My name is Lidia Morris</h2><br /><br />
+            <img id="columnimg" src="column-image.png" alt="Lidia in front of the Golden Gate Bridge">
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01" alt="Lidia in front of the Golden Gate Bridge">
+                <div id="caption"></div>
+               </div>
+               <script> var modal = document.getElementById("myModal"); 
+               var img = document.getElementById("columnimg"); 
+               var modalImg = document.getElementById("img01"); 
+               var captionText = document.getElementById("caption"); 
+               img.onclick = function(){
+                  modal.style.display = "block";
+                  modalImg.src = this.src;
+                  captionText.innerHTML = this.alt; }
+               var span = document.getElementsByClassName("close")[0];
+               span.onclick = function() { 
+                  modal.style.display = "none";
+            }</script>
+         </aside>
+         <section>
+            <h2>This website is my portfolio</h2>
+            <p>I am using this website to display work from projects that I have both completed and am working on as an Information Science student and Research Assistant at the UNC Community Driven Archive Project. Right now, my website also links out to my <a href="https://docs.google.com/document/d/17JuIu0DbzvPR_RAZKURR8E-0GyeHwqzwwQhFjQ_z2_Q/edit?usp=sharing">resume</a>, and information on my <a href="https://scala.web.unc.edu/officers/">leadership roles</a> at <a href="https://sils.unc.edu//">UNC SILS</a>. 
+            <h2>My Work Interests</h2>
+            <p>My work interests currently center on User Experience, Accesibility, and Computational Linguistics. I am interested in the work I can do that combines my past education and work in the humanities and my current education in information science. I believe my background in FIlm & Media studies gives me an eye for aesthetics that can be seen in my user experience design work and past project concepts, and allows me to view information science issues with a new perspective.</p>
+            <h2>Current & Completed Courses </h2>
+            <p>Current:<br />
+               - 572: Web Development<br />
+               - 573: Mobile Web Development<br />
+               - 581: Research Methods Overview<br />
+               - 509: Information Retrieval<br />
+               - 523: Databases I<br />
+               <br />
+            Completed:<br />
+               - 520: Organization of Information<br />
+               - 500: Human-Information Interaction<br />
+               - 501: Information Resources & Retrieval<br />
+               - 560: Programming for Information Science<br />
+               - 690: Intermediate Selected Topics: Open Access for Library & Information Professionals<br /> </p>
+            <h2> Where else can you find me? </h2>
+            <p>You can find me on LinkedIn <a href="https://www.linkedin.com/in/ljmorris96/">here</a></section>
+         </div>
+      </main>
+      <footer>
+         Lidia Morris
+         <p id="todays-date"></p>
+         <script> var todaysDate = new Date();
+         var dateElement = document.querySelector("#todays-date");
+         dateElement.textContent = (todaysDate.getMonth()+1) + "-" + todaysDate.getDate() + "-" + todaysDate.getFullYear();
+      </script>
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Lidia's Website Project</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="oerstyle.css">
+   </head>
+   <body class="Site">
+      <header>Lidia's Website Project</header>
+      <main class="Site content">
+      <nav class="nav-flex-container">
+         <ul>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/index.html">Home</a>
+            </li>
+            <li>
+               <a href="https://docs.google.com/document/d/17JuIu0DbzvPR_RAZKURR8E-0GyeHwqzwwQhFjQ_z2_Q/edit?usp=sharing">Resume</a>
+            </li>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/oer.html">OER Project</a>
+            </li>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/video.html">Video Editing</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="content-flex-container">
+         <aside>
+            <h4>690: Intermediate Selected Topics</h4>
+            <h2>Open Access For Library & Information Professionals</h2><br /><br />
+            <a href="https://sites.google.com/view/3doer/home"><img src="oerhome.png" alt="home page of OER project website" class="columnimg"></a>
+         </aside>
+         <section>
+            <h2>What is Open Access for Library & Information Professionals?</h2>
+            <p>This selected topic course focused on the concept of Open Access, which refer to the free online availability of research articles.<br /><br />
+            This class explored the concept of Open Access, the  Open Access movement, examined best practices for library services, and developed strategies to prepare for the future. It culminated in a final project in which each class member creater an OER - an Open Education Resource - with a corresponding website. For my project, I created an short exlainer on using 3D printing in educational spaces, as well as a 3D printable "zine" - each "page" of which was licensed under the creative commons attribution license - that could be scanned with an augmented reality app to be shown a video detailing one of the steps in the 3D printing process. </p></section>
+         <section>
+            <h2> What was the purpose of this project?</h2>
+            <p>The purpose of this project was to create an open, printable 3D resource for the UNC BeAM Makerspaces to use for their 3D printers. My idea was that due to makerspace users only having to do one training to use a 3D printer, and perhaps having to rarely use 3D printing resources, they may need quick and accesible guidance on how to complete one or all of the steps of 3D printing with the makerspace resources.<br /><br /> By allowing users to refresh their memory simply and through taking out their phones and scanning one of the zine pages, which would hopefulyl be located near the printers, conveniently hanging on the rack on an O-ring, each video can give the user visual as well as audio instructions on how to proceed with whatever step they need help with, instead of having to rely only on writte, printed instructions.</p>
+         </section>
+         </div>
+         <div class="content-flex-container">
+         <section>
+         	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+         	<style>.mySlides { width: 100%; }</style>
+         		<h2 class="w3-center">Select screenshots from OER project</h2>
+         		<div class="w3-content w3-display-container">
+         			<div class="w3-display-container mySlides">
+         				<img src="webimage/explprint.png" style="width:100%" alt="3D Printing explanation page">
+         				<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">This page gives a brief overview of what 3D printing is, how it works, and what materials can be used in 3D printing.</div> 
+         			</div>
+         			 <div class="w3-display-container mySlides">
+         			 	<img src="webimage/educ.png" style="width:100%" alt="Educational info page">
+         			 	<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">This page details the various educational benefits of bringing 3D printing into classrooms and the skills students can gain when it is integrated with lesson plans.</div>
+         			 </div>
+         			 <div class="w3-display-container mySlides">
+         			 	<img src="webimage/resource.png" style="width:100%" alt="Resources page">
+         			 	<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">On this page, I gave an overview of the various free online resources available to new 3D printer users.</div>
+         			 </div>
+         			 <div class="w3-display-container mySlides">
+         			 	<img src="webimage/printguide.png" style="width:100%" alt="Print guide page">
+         			 	<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">This page contains the links to the separate pages of the printable "zine" guide for 3D printing, as well as 3D renderings of the .stl files</div>
+         			 </div>
+         			 <div class="w3-display-container mySlides">
+         			 	<img src="webimage/videos.png" style="width:100%" alt="Videos page">
+         			 	<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">This page contains the videos that appear when the pages of the 3D guide are scanned with the AR app</div>
+         			 </div>
+         			 <div class="w3-display-container mySlides">
+         			 	<img src="webimage/appguide.png" style="width:100%" alt="Guide to downloading app page">
+         			 	<div class="w3-display-bottomleft w3-container w3-padding-16 w3-black">This page is a guide to downloading and using the AR app that corresponds with the 3D printing guide</div>
+         			 </div>
+         			 <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+         			 <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+         		</div>
+         		<script>
+         			var slideIndex = 1;
+         			showDivs(slideIndex);
+         			function plusDivs(n) {
+         				showDivs(slideIndex += n);
+         			}
+         			function showDivs(n) {
+         				var x = document.querySelectorAll(".mySlides");
+         				if (n > x.length)
+         					{slideIndex = 1}
+         				if (n < 1)
+         					{slideIndex = x.length}
+         				for (i = 0; i < x.length; i++) {
+         					x[i].style.display = "none";
+         				}
+         				x[slideIndex-1].style.display = "block";
+         			}
+         		</script>
+         </section>
+      </div>
+      </main>
+      <footer>
+         Lidia Morris
+         <p id="todays-date"></p>
+         <script> var todaysDate = new Date();
+         var dateElement = document.querySelector("#todays-date");
+         dateElement.textContent = (todaysDate.getMonth()+1) + "-" + todaysDate.getDate() + "-" + todaysDate.getFullYear();
+      </script>
+      </footer>
+   </body>
+</html>

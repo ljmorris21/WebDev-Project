@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Lidia's Website Project</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="video.css">
+      <script src="https://kit.fontawesome.com/7179b138ca.js" crossorigin="anonymous"></script>
+      <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+      <link href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+      <link href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all" rel="stylesheet" id="font-awesome-5-kit-css">
+   </head>
+   <body class="Site">
+      <header>Lidia's Website Project</header>
+      <main class="Site content">
+      <nav class="nav-flex-container">
+         <ul>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/index.html">Home</a>
+            </li>
+            <li>
+               <a href="https://docs.google.com/document/d/17JuIu0DbzvPR_RAZKURR8E-0GyeHwqzwwQhFjQ_z2_Q/edit?usp=sharing">Resume</a>
+            </li>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/oer.html">OER Project</a>
+            </li>
+            <li>
+               <a href="https://opal.ils.unc.edu/~lidia/video.html">Video Editing</a>
+            </li>
+         </ul>
+      </nav>
+      <div class="content-flex-container">
+         <aside>
+            <h2>Video Editing Work</h2><br /><br />
+         </aside>
+         <section>
+            <h2>Selected Film to Showcase Editing Skills</h2>
+            <p>From 2014-2018 I attended the College of William & Mary and recieved my undergraduate degree in Film & Media Studies. Over those 4 years I developed video and sound editing skills. On this page I have one of the films I edited my senior year. This film, "Narcissus," was part of the 24 hour film festival at William & Mary, 24 Speed. It receieved the Jury Award for Best Use of Dialogue. Thr film was edited using Adobe Premiere Pro.</p> 
+         </section>
+         </div>
+      <div class="content-flex-container">
+         <aside>
+            <h3>Narcissus</h3>
+         </aside>
+         <section>
+            <div id="video-container1">
+               <video id="video1">
+                  <source src="narcissus-small.mp4" type="video/mp4">
+               </video>
+               <p>Narcissus - 24 Speed Short Film</p>
+               <div id="controls1">
+                  <i id="playpause" class="far fa-play-circle fa-2x"></i>
+                  <i id="stop" class="far fa-stop-circle fa-2x"></i>
+               </div>
+            </div>
+            <script>
+               var myVideo = document.querySelector("#video1");
+               var playPauseButton = document.querySelector("#playpause");
+               playPauseButton.addEventListener('click', playPause);
+               var stopButton = document.querySelector("#stop");
+               stopButton.addEventListener('click', stop);
+               function playPause() {
+                  if (myVideo.paused) {
+                     myVideo.play();
+                     playPauseButton.className = "far fa-pause-circle fa-2x"; }
+                  else {
+                     myVideo.pause();
+                     playPauseButton.className = "far fa-play-circle fa-2x"; }
+               }
+               function stop() {
+                  myVideo.pause();
+                  myVideo.currentTime = 0;
+                  playPauseButton.className = "far fa-play-circle fa-2x"; 
+               }
+            </script>
+         </section>
+      </div>
+      
+      </main>
+      <footer>
+         Lidia Morris
+         <p id="todays-date"></p>
+         <script> var todaysDate = new Date();
+         var dateElement = document.querySelector("#todays-date");
+         dateElement.textContent = (todaysDate.getMonth()+1) + "-" + todaysDate.getDate() + "-" + todaysDate.getFullYear();
+      </script>
+      </footer>
+   </body>
+</html>
